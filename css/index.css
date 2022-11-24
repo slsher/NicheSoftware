@@ -1,0 +1,142 @@
+/*header*/
+.header {
+    width: 100%;
+    /*position: fixed;*/
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+    backdrop-filter: saturate(5) blur(20px);
+    box-shadow: 0 4px 10px rgba(116, 116, 116, 0.08);;
+}
+
+.maxWidth {
+    max-width: 1380px
+}
+
+/*footer*/
+.footer {
+    color: #999;;
+    background: #fff;;
+    padding: 30px;
+    font-size: 13px;
+}
+
+/*轮播图*/
+.broadcast img{
+    height: 468px;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .broadcast img {
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .broadcast img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+
+/*集合*/
+.main-shadow{
+    box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);
+    transition: box-shadow .3s;
+}
+.gutters-5>div{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.gutters-5 .style-4{
+    margin-bottom: 0;
+    border-radius: 8px 8px 0 0;
+}
+.graphic,.page-cover{
+    text-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    --main-color: #fff;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);;
+    padding: 0;
+    padding-bottom: 70%;
+    border-radius: 8px;
+}
+
+.graphic>.fit-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+img.lazyloaded{
+    -webkit-animation: lazy_blur .5s;
+    animation: lazy_blur .5s;
+}
+
+.graphic-mask{
+    background: #000;
+}
+
+/*.abs-center{
+    text-align: right;
+}
+
+.abs-center.right-top{
+    left: auto;
+    width: auto;
+}
+
+badge.b-black{
+    background-color: rgba(0, 0, 0, .2);
+}*/
+
+/*集合下部分 文字*/
+.text-ellipsis{
+    /*隐藏文字 控制方块大小*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.gutters-5 a:hover{
+    color: #f78da7;
+}
+
+/*分类和软件*/
+.classification li>a{
+    display: inline-block;
+    padding: 2px 11px;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 0 1px;
+
+}
+
+.classification li>a:hover{
+    color: #f78da7;
+}
+.classification li >.nav-link.active{
+    background: #f04494;;
+    color: #fff!important;
+}
+
+/*软件列表*/
+.posts-row {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 15px;
+}
+
+
