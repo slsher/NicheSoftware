@@ -20,7 +20,7 @@
 <!--内容-->
 <div class="container">
     <div class="row ">
-        <div class="col-lg-9 col-md-12 ">
+        <div class="col-lg-8 col-md-12 ">
             <div class="page-cover">
                 <img src="../resources/img/soft-wallpaper02.png" class="img-fluid fit-cover lazyloaded radius8" alt="..." style="">
                 <div class="absolute linear-mask radius8"></div>
@@ -953,7 +953,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 sidebar">
+        <div class="col-lg-4 sidebar">
             <div data-affix="true" class="mb20 hidden-xs" style="transition: opacity .3s">
                 <div class="user-card zib-widget widget">
                     <div class="user-cover graphic" style="padding-bottom: 50%;">
@@ -963,47 +963,66 @@
                         <div class="user-content">
                             <div class="user-avatar">
                                 <span class="avatar-img avatar-lg">
-                                <img alt="默认头像" class="fit-cover avatar" src="https://foxirj.com/wp-content/themes/foxirj/img/avatar-default.png">
+                                    <img alt="默认头像" class="fit-cover avatar" src="../resources/img/avatar-default.png">
                                 </span>
                             </div>
                             <div class="user-info mt10">
                                 <div class="text-center ">
                                     <p class="muted-color box-body em12">HI！请登录</p>
-                                    <p>
-                                        <a href="javascript:;" class="signin-loader but jb-blue padding-lg" style="overflow: hidden; position: relative;">
-                                            <i class="fa fa-fw fa-sign-in" aria-hidden="true"></i>登录
-                                        </a>
-                                    </p>
+                                    <!--登录按钮-->
+                                    <div>
+                                        <button class="jb-blue signin-loader" >
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="24px" height="24px">
+                                                        <use xlink:href="#icon-send"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span >登录</span>
+                                        </button>
+                                    </div>
+
                                     <div class="social-separator separator muted-3-color em09 mt20 mb20">社交帐号登录</div>
                                     <div class="social_loginbar">
                                         <a title="QQ登录" href="https://foxirj.com/oauth/qq?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item qq button-lg">
-                                            <i class="fa fa-qq" aria-hidden="true"></i>QQ登录
+                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
+                                                <use xlink:href="#icon-QQ"></use>
+                                            </svg>
+                                            QQ登录
                                         </a>
-                                        <a title="微信登录" href="https://foxirj.com/oauth/weixingzh?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item weixingzh button-lg qrcode-signin">
-                                            <i class="fa fa-weixin" aria-hidden="true"></i>微信登录
+                                        <a title="微信登录" href="#" class="social-login-item wechat button-lg">
+                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
+                                                <use xlink:href="#icon-wechat-fill"></use>
+                                            </svg>
+                                            微信登录
                                         </a>
-                                        <a title="微博登录" href="https://foxirj.com/oauth/weibo?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item weibo button-lg">
-                                            <i class="fa fa-weibo" aria-hidden="true"></i>微博登录
+                                        <a title="微博登录" href="#" class="social-login-item weibo button-lg">
+                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
+                                                <use xlink:href="#icon-weibo"></use>
+                                            </svg>
+                                            微博登录
                                         </a>
-                                        <a title="码云登录" href="https://foxirj.com/oauth/gitee?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item gitee button-lg">
-                                            <svg class="icon" aria-hidden="true">
-                                                <use xlink:href="#icon-gitee"></use>
-                                            </svg>码云登录
+                                        <a title="支付宝登录" href="#" class="social-login-item zhifubao button-lg">
+                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
+                                                <use xlink:href="#icon-zhifubao0"></use>
+                                            </svg>
+                                            支付宝登录
                                         </a>
-                                        <a title="百度登录" href="https://foxirj.com/oauth/baidu?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item baidu button-lg">
-                                            <svg class="icon" aria-hidden="true">
+                                        <a title="百度登录" href="#" class="social-login-item baidu button-lg">
+                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
                                                 <use xlink:href="#icon-baidu"></use>
-                                            </svg>百度登录
+                                            </svg>
+                                            百度登录
                                         </a>
-                                        <a title="支付宝登录" href="https://foxirj.com/oauth/alipay?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item alipay button-lg">
-                                            <svg class="icon" aria-hidden="true">
-                                                <use xlink:href="#icon-alipay"></use>
-                                            </svg>支付宝登录
-                                        </a>
-                                        <a title="GitHub登录" href="https://foxirj.com/oauth/github?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item github button-lg">
-                                            <i class="fa fa-github" aria-hidden="true"></i>GitHub登录
+                                        <a title="Github登录" href="#" class="social-login-item github button-lg">
+                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
+                                                <use xlink:href="#icon-github-fill"></use>
+                                            </svg>
+                                            Github登录
                                         </a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1021,7 +1040,9 @@
 </footer>
 
 
-<script src="https://at.alicdn.com/t/c/font_3787276_2j40eu20yaw.js"></script>
+
+
+<script src="https://at.alicdn.com/t/c/font_3787276_6txyau6ikca.js"></script>
 <!-- jQuery 和 Bootstrap 集成包（集成了 Popper） -->
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>

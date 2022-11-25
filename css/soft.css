@@ -330,3 +330,195 @@ img.lazyloaded{
 .user-card .card-content{
     padding: 15px;
 }
+.user-card.widget .user-avatar{
+    text-align: center;
+}
+
+.avatar-lg,.avatar-img{
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.avatar{
+    border-radius: 100px;
+    display: inline-block;
+    opacity: 0.9;
+}
+.avatar,.fit-cover{
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+    object-fit: cover;
+}
+
+.muted-color{
+    color: #777;
+}
+
+/*登录按钮*/
+.jb-blue {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.jb-blue span {
+    display: block;
+    margin-left: 0.3em;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.jb-blue svg {
+    display: block;
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.jb-blue:hover .svg-wrapper {
+    -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.jb-blue:hover svg {
+    -webkit-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    -ms-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.jb-blue:hover span {
+    -webkit-transform: translateX(5em);
+    -ms-transform: translateX(5em);
+    transform: translateX(5em);
+}
+
+.jb-blue:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+@-webkit-keyframes fly-1 {
+    from {
+        -webkit-transform: translateY(0.1em);
+        transform: translateY(0.1em);
+    }
+
+    to {
+        -webkit-transform: translateY(-0.1em);
+        transform: translateY(-0.1em);
+    }
+}
+
+@keyframes fly-1 {
+    from {
+        -webkit-transform: translateY(0.1em);
+        transform: translateY(0.1em);
+    }
+
+    to {
+        -webkit-transform: translateY(-0.1em);
+        transform: translateY(-0.1em);
+    }
+}
+
+.signin-loader{
+    height: 34px;
+    font-size: 14px;
+    font-weight: 400;
+    margin:0 auto;
+}
+
+/*社交登录*/
+.social-separator{
+    padding: 10px 0;
+}
+.separator{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.muted-3-color{
+    color: #b1b1b1 ;
+}
+.separator::after, .separator::before{
+    content: "";
+    background: rgba(50, 50, 50, 0.06);
+    max-width: 20%;
+    height: 1px;
+    margin: 0 1em;
+    flex: 1;
+}
+
+/*社交登录 qq 微信 微博等等*/
+
+.social_loginbar{
+    text-align: center;
+}
+
+.social-login-item.qq{
+    background: #1296db;
+}
+.social-login-item.wechat{
+    background: #24B76a;
+}
+.social-login-item.weibo{
+    background: #EA5d5c;
+}
+.social-login-item.baidu{
+    background: #4e6ef2;
+}
+.social-login-item.zhifubao{
+    background: #1296db;
+}
+.social-login-item.github{
+    background: #505050;
+}
+
+.social_loginbar .social-login-item, .social_loginbar .xh-social-item{
+    float: none;
+    display: inline-block;
+    width: 32px!important;
+    height: 32px!important;
+    line-height: 32px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 3px 5px;
+}
+
+.social_loginbar a{
+    transition: .2s ease-out;
+}
+.social_loginbar a:hover{
+    transform: scale(1.1);
+}
+.social-login-item{
+    color: #fff!important;
+}
+.social-login-item.button-lg{
+    width: 120px!important;
+}

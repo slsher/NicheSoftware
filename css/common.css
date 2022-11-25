@@ -150,7 +150,9 @@ svg {
     background-color: #ffffff;
 }
 
-
+.text-center{
+    text-align: center;
+}
 
 .mr6{
     margin-right: 6px;
@@ -161,6 +163,10 @@ svg {
 }
 .mt6{
     margin-top: 6px;
+}
+
+.mt20{
+    margin-top: 20px;
 }
 .mt10 {
     margin-top: 10px;
