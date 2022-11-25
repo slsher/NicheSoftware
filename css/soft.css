@@ -1,50 +1,29 @@
-/*header*/
-
-
-/*bootstrap 轮播图*/
-.tab-content>.active{
-    display: inline-table;
+/*page-cover 开业图片*/
+.page-cover{
+    padding-bottom: calc(25% + 80px);
+}
+.page-cover{
+    text-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    --main-color: #fff;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    padding-bottom: 70%;
+    border-radius: 8px;;
 }
 
-
-/*轮播图*/
-.broadcast img{
-    height: 468px;
-    width: 100%;
+.zib-widget{
+    clear: both;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
-
-@media screen and (max-width: 992px) {
-    .broadcast img {
-        height: 300px;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .broadcast img {
-        height: 200px;
-        width: 100%;
-    }
-}
-
-
-/*集合*/
-.main-shadow{
-    box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);
-    transition: box-shadow .3s;
-}
-.gutters-5>div{
-    padding-right: 5px;
-    padding-left: 5px;
-}
-.gutters-5 .style-4{
-    margin-bottom: 0;
-    border-radius: 8px 8px 0 0;
-}
-
-
-.graphic>.fit-cover{
+.page-cover>.fit-cover{
     position: absolute;
+}
+.fit-cover{
     width: 100%;
     height: 100%;
     transition: all .2s;
@@ -53,62 +32,48 @@
     object-fit: cover;
 }
 
-img.lazyloaded{
-    -webkit-animation: lazy_blur .5s;
-    animation: lazy_blur .5s;
+.linear-mask{
+    background-image: linear-gradient(0deg,rgba(29,41,49,.4) 3em,rgba(255,255,255,0) 8em);
 }
 
-img.lazyloaded:hover{
-    transform: scale(1.1);
+.page-cover >.page-cover-con{
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    z-index: 1;
 }
 
-.graphic-mask{
-    background: #000;
+.title-h-left:before{
+    width: 40px;
+    height: 3px;
+    top: auto;
+    left: 0;
+    bottom: 3px;
+    transition: .4s;
+    position: absolute;
+    content: '';
+    background: #f04494;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px -1px #f04494;
+}
+.list-inline{
+    margin-left: 0;
+}
+.box-body{
+    padding: 15px;
+}
+.title-h-left{
+    position: relative;
+    padding-bottom: 8px;
 }
 
-/*.abs-center{
-    text-align: right;
+.page-cover .page-desc{
+    opacity: .8;
+    word-break: break-word;
 }
 
-.abs-center.right-top{
-    left: auto;
-    width: auto;
-}
-
-badge.b-black{
-    background-color: rgba(0, 0, 0, .2);
-}*/
-
-/*集合下部分 文字*/
-.text-ellipsis{
-    /*隐藏文字 控制方块大小*/
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.gutters-5 a:hover{
-    color: #f78da7;
-}
-
-/*分类和软件*/
-.classification li>a{
-    display: inline-block;
-    padding: 2px 11px;
-    font-weight: 500;
-    border-radius: 20px;
-    margin: 0 1px;
-
-}
-
-.classification li>a:hover{
-    color: #f78da7;
-}
-.classification li >.nav-link.active{
-    background: #f04494;;
-    color: #fff!important;
-}
-
-/*软件列表*/
+/*导航*/
+/*导航列表内容*/
 .posts-row {
     margin-left: -8px;
     margin-right: -8px;
@@ -127,7 +92,7 @@ badge.b-black{
 
 }
 .posts-item.card{
-    width: calc(25% - 16px);
+    width: calc(33.3% - 19px);
     display: inline-block;
     margin: 8px;
     padding: 10px;
@@ -136,7 +101,7 @@ badge.b-black{
 }
 @media screen and (max-width: 992px) {
     .posts-item.card{
-        width: calc(33.3% - 16px);
+        width: calc(32% - 16px);
         display: inline-block;
         margin: 8px;
         padding: 10px;
@@ -147,9 +112,9 @@ badge.b-black{
 
 @media screen and (max-width: 768px) {
     .posts-item.card{
-        width: calc(50% - 10px);
+        width: calc(45% - 5px);
         display: inline-block;
-        margin: 8px;
+        margin: 5px;
         padding: 10px;
         vertical-align: top;
         transition: .3s;
@@ -319,9 +284,49 @@ badge.b-black{
     object-fit: cover;
 }
 
+/*侧边*/
 
+.sidebar{
+    float: left;
+    width: 311px;
+    position: unset;
+}
+@media (max-width: 996px) {
+    .sidebar{
+        display: none;
+    }
+}
+.user-card{
+    padding: 0;
+    overflow: hidden;
+}
+.zib-widget{
+    clear: both;
+    background: #fff;;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);;
+    border-radius: 8px;;
+    margin-bottom: 20px;
+}
 
+.user-card .user-cover{
+    border-radius: 8px 8px 0 0;
+}
 
+.graphic>.fit-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
+img.lazyloaded{
+    -webkit-animation: lazy_blur .5s;
+    animation: lazy_blur .5s;
+}
 
-
+.user-card.widget .user-cover+.card-content{
+    margin-top: -55px;
+}
+.user-card .card-content{
+    padding: 15px;
+}
