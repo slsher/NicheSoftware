@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>文章</title>
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/soft.css">
+    <link rel="stylesheet" href="../css/passage.css">
+</head>
+<body>
+
+<!--导航栏-->
+<header class="header sticky-top">
+    <div class="container-fluid maxWidth sticky-top">
+        <div class="headerpage"></div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <div class="article main-bg theme-box box-body radius8 main-shadow">
+                <div class="typorapage"></div>
+            </div>
+            <div class="commentpage"></div>
+        </div>
+        <div class="col-lg-4 sidebar">
+            <div class="sidebarpage"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--底部-->
+<footer class="footer ">
+    <div class="container-fluid maxWidth">
+        <div class="footerpage"></div>
+    </div>
+</footer>
+
+
+<script src="https://at.alicdn.com/t/c/font_3787276_zsh6ljewwc.js"></script>
+<!-- jQuery 和 Bootstrap 集成包（集成了 Popper） -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(function () {
+        /**引入头部和尾部网页*/
+        $(".headerpage").load('header.html');
+        $(".footerpage").load('footer.html');
+        $(".typorapage").load('typora.html');
+        $(".sidebarpage").load('sidebar.html');
+        $(".commentpage").load('comment.html');
+    });
+</script>
+</body>
+</html>

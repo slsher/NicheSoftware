@@ -1,0 +1,141 @@
+.box-body.notop {
+    padding-top: 0;
+}
+
+.box-body {
+    padding: 15px;
+}
+
+.title-theme {
+    position: relative;
+    padding-left: 1.2em;
+    font-size: 15px;
+}
+
+.title-theme:before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    background: #f04494;
+    top: 10%;
+    left: 2px;
+    bottom: 10%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px -1px #f04494;
+}
+
+.title-theme small {
+    font-size: 80%;
+    opacity: .7;
+}
+
+/*评论内容*/
+/*发表评论左侧*/
+.fixed-body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    background: rgba(24, 25, 27, .8);
+    opacity: 0;
+    transition: .3s;
+}
+
+.flex.ac {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+#comments .comt-title {
+    width: 90px;
+}
+
+.flex .flex0 {
+    flex: none;
+}
+
+#comments .comt-title .comt-avatar .avatar {
+    width: 60px;
+    height: 60px;
+}
+
+img.lazyloaded {
+    animation: lazy_blur .5s;
+}
+
+/*发表评论右侧*/
+.flex .grow1 {
+    flex-grow: 1;
+}
+
+textarea#comment {
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    url(../resources/img/chatting.png) right 10px bottom -5px no-repeat;
+    background-size: 25%;
+}
+
+#comment {
+    margin-bottom: 5px;
+}
+
+.form-control {
+    border-color: transparent;
+    color: #4e5358;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    font-family: inherit;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.but.pw-1em {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.c-blue {
+    color: #2997f7;
+}
+
+.span.dropup {
+    display: inline-block;
+}
+
+a.but {
+    cursor: pointer;
+}
+
+/*评论展示*/
+.comment-footer .replay {
+    color: #999;
+    margin-right: 10px
+}
+
+.comment-footer .replay:hover {
+    color: #f04494;
+}
+.comment-footer .menu:hover{
+    color: #f04494;
+}
+
+
+
+

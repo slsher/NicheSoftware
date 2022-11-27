@@ -72,6 +72,27 @@ a:hover {
 b{
     font-weight: 700;
 }
+ul{
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+ol{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+textarea{
+    resize: vertical;
+}
+
+input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
 
 budget{
     font-size: .8em;
@@ -153,7 +174,9 @@ svg {
 .text-center{
     text-align: center;
 }
-
+.mr3{
+    margin-right: 3px;
+}
 .mr6{
     margin-right: 6px;
 }
@@ -174,6 +197,10 @@ svg {
 
 .ml6{
     margin-left: 6px;
+}
+
+.ml10{
+    margin-left: 10px;
 }
 .mb6{
     margin-bottom: 6px;
@@ -221,6 +248,47 @@ svg {
 .muted-2-color{
     color: #999999;
 }
+
+.but{
+    border-radius: 4px;
+    display: inline-block;
+    border-radius: 4px;
+    transition: .15s;
+    border: 1px solid var(--this-border);
+    vertical-align: middle;
+    padding: 0.3em 0.6em;
+    text-align: center;
+    font-weight: 400;
+    box-shadow: var(--this-shadow);
+    background: var(--this-bg);
+    color: var(--this-color);
+    --main-color: var(--this-color);
+    --this-bg: rgba(41,151,247,.1);
+    --this-border: transparent;
+    --this-shadow: none;
+    --this-color: #2997f7;
+    text-shadow: 0 0 0;
+    line-height: 1.44;
+}
+
+.sidebar{
+    float: left;
+    width: 311px;
+    position: unset;
+}
+.padding-6{
+    padding: 6px;
+}
+@media (max-width: 996px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+.theme-box{
+    margin-bottom: 20px;
+}
+
 
 
 

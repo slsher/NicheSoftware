@@ -953,83 +953,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 sidebar">
-            <div data-affix="true" class="mb20 hidden-xs" style="transition: opacity .3s">
-                <div class="user-card zib-widget widget">
-                    <div class="user-cover graphic" style="padding-bottom: 50%;">
-                        <img class="fit-cover lazyloaded" src="../resources/img/soft-wallpaper02.png" data-src="">
-                    </div>
-                    <div class="card-content mt10">
-                        <div class="user-content">
-                            <div class="user-avatar">
-                                <span class="avatar-img avatar-lg">
-                                    <img alt="默认头像" class="fit-cover avatar" src="../resources/img/avatar-default.png">
-                                </span>
-                            </div>
-                            <div class="user-info mt10">
-                                <div class="text-center ">
-                                    <p class="muted-color box-body em12">HI！请登录</p>
-                                    <!--登录按钮-->
-                                    <div>
-                                        <button class="jb-blue signin-loader" >
-                                            <div class="svg-wrapper-1">
-                                                <div class="svg-wrapper">
-                                                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" width="24px" height="24px">
-                                                        <use xlink:href="#icon-send"></use>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <span >登录</span>
-                                        </button>
-                                    </div>
-
-                                    <div class="social-separator separator muted-3-color em09 mt20 mb20">社交帐号登录</div>
-                                    <div class="social_loginbar">
-                                        <a title="QQ登录" href="https://foxirj.com/oauth/qq?rurl=https%3A%2F%2Ffoxirj.com%2Fcategory%2Fsoft" class="social-login-item qq button-lg">
-                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
-                                                <use xlink:href="#icon-QQ"></use>
-                                            </svg>
-                                            QQ登录
-                                        </a>
-                                        <a title="微信登录" href="#" class="social-login-item wechat button-lg">
-                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
-                                                <use xlink:href="#icon-wechat-fill"></use>
-                                            </svg>
-                                            微信登录
-                                        </a>
-                                        <a title="微博登录" href="#" class="social-login-item weibo button-lg">
-                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
-                                                <use xlink:href="#icon-weibo"></use>
-                                            </svg>
-                                            微博登录
-                                        </a>
-                                        <a title="支付宝登录" href="#" class="social-login-item zhifubao button-lg">
-                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
-                                                <use xlink:href="#icon-zhifubao0"></use>
-                                            </svg>
-                                            支付宝登录
-                                        </a>
-                                        <a title="百度登录" href="#" class="social-login-item baidu button-lg">
-                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
-                                                <use xlink:href="#icon-baidu"></use>
-                                            </svg>
-                                            百度登录
-                                        </a>
-                                        <a title="Github登录" href="#" class="social-login-item github button-lg">
-                                            <svg class="icon" aria-hidden="true" style="width: 15px;height: 15px">
-                                                <use xlink:href="#icon-github-fill"></use>
-                                            </svg>
-                                            Github登录
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-4  sidebar">
+            <div class="sidebarpage"></div>
         </div>
+
     </div>
 </div>
 <!--底部-->
@@ -1042,7 +969,7 @@
 
 
 
-<script src="https://at.alicdn.com/t/c/font_3787276_6txyau6ikca.js"></script>
+<script src="https://at.alicdn.com/t/c/font_3787276_zsh6ljewwc.js"></script>
 <!-- jQuery 和 Bootstrap 集成包（集成了 Popper） -->
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -1052,6 +979,7 @@
         /**引入头部和尾部网页*/
         $(".headerpage").load('header.html');
         $(".footerpage").load('footer.html');
+        $(".sidebarpage").load('sidebar.html');
     });
 
 

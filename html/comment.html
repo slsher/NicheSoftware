@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>评论</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/comment.css">
+</head>
+<body>
+<div class="theme-box" id="comments">
+    <!--评论标头-->
+    <div class="box-body notop">
+        <div class="title-theme">评论
+            <small>共12条</small></div>
+    </div>
+    <!--评论内容-->
+    <div class="no_webshot main-bg theme-box box-body radius8 main-shadow">
+        <div class="mobile-fixed mb20" >
+            <div class="fixed-body"></div>
+            <form id="commentform">
+                <div class="flex ac">
+                    <div class="comt-title text-center flex0 mr10">
+                        <div class="comt-avatar mb10">
+                            <img alt="头像" src="../resources/img/avatar-default.png"
+                                 data-src=""
+                                 class="avatar   lazyloaded"></div>
+                        <p class="" data-toggle-class="open" data-target="#comment-user-info" data-toggle="tooltip"
+                           title="" data-original-title="填写用户信息">昵称</p></div>
+                    <div class="comt-box grow1">
+                        <textarea placeholder="macOS请先附上系统版本和芯片；macOS有问题/报错直接搜索教程；请组织好语言再说出发生的问题及原因。" autoheight="true"
+                                  maxheight="188px" class="form-control grin" name="comment" id="comment" cols="100%"
+                                  rows="4" tabindex="1"
+                                  style="height: 90px; overflow: hidden;">
+
+                        </textarea>
+
+                        <div class="comt-ctrl relative">
+                            <div class="comt-tips-right pull-right">
+                                <button class="but c-blue pw-1em" name="submit" id="submit" tabindex="5">提交评论</button>
+                            </div>
+                            <div class="comt-tips-left">
+                                <span class="dropup relative" id="comment-user-info" require_name_email="true">
+                                    <a class="but mr6" data-toggle-class="open" data-target="#comment-user-info"
+                                       href="javascript:;">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-user"></use>
+                                        </svg>
+                                        <span class="hide-sm">昵称</span>
+                                    </a>
+                                </span>
+                                <span class="dropup relative" require_name_email="true">
+                                    <a class="but mr6" data-toggle-class="open" data-target="#comment-user-info"
+                                       href="javascript:;">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-comment1"></use>
+                                        </svg>
+                                        <span class="hide-sm">常用于</span>
+                                    </a>
+                                </span>
+                                <span class="dropup relative" require_name_email="true">
+                                    <a class="but mr6" data-toggle-class="open" data-target="#comment-user-info"
+                                       href="javascript:;">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-smile"></use>
+                                        </svg>
+                                        <span class="hide-sm">表情</span>
+                                    </a>
+                                </span>
+                                <span class="dropup relative" require_name_email="true">
+                                    <a class="but mr6" data-toggle-class="open" data-target="#comment-user-info"
+                                       href="javascript:;">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-code"></use>
+                                        </svg>
+                                        <span class="hide-sm">代码</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--评论展示-->
+        <div class="tab-nav-theme">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-new-tab" data-toggle="pill" href="#pills-new" role="tab"
+                       aria-controls="pills-new" aria-selected="true">最新</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-hot-tab" data-toggle="pill" href="#pills-hot" role="tab"
+                       aria-controls="pills-hot" aria-selected="false">最热</a>
+                </li>
+
+            </ul>
+            <hr>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+                    <!--媒体对象-->
+                    <div class="media">
+                        <img src="../resources/img/avatar-default.png" class="mr-3" alt="..." style="width: 50px;height: 50px;border-radius: 100px">
+                        <div class="media-body">
+                            <h5 class="mt-0">王金涛</h5>
+                            <p>Win更新后打开闪退：先卸载，重启再安装，若还不行，则卸载、安装到别的磁盘即可打开~
+                            </p>
+                            <div class="comment-footer">
+                                <span style="vertical-align: center;margin-right: 10px;color: #999">5天前</span>
+                                <a title="回复给王金涛" href="#" class="replay" style="">回复</a>
+                                <a href="#" class="menu">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-menu"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-hot" role="tabpanel" aria-labelledby="pills-hot-tab">
+                    <!--媒体对象-->
+                    <div class="media">
+                        <img src="../resources/img/avatar-default.png" class="mr-3" alt="..." style="width: 50px;height: 50px;border-radius: 100px">
+                        <div class="media-body">
+                            <h5 class="mt-0">王金涛</h5>
+                            <p>Win更新后打开闪退：先卸载，重启再安装，若还不行，则卸载、安装到别的磁盘即可打开~
+                            </p>
+                            <div class="comment-footer">
+                                <span style="vertical-align: center;margin-right: 10px;color: #999">5天前</span>
+                                <a title="回复给王金涛" href="#" class="replay" style="">回复</a>
+                                <a href="#" class="menu">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-menu"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
