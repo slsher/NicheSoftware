@@ -1,114 +1,51 @@
-/*header*/
-
-
-/*bootstrap 轮播图*/
-.tab-content>.active{
-    display: inline-table;
+/*图片*/
+.abs-center{
+    position: relative;
+    top: 50%;
+    right: 0.7em;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.title-h-center{
+    position: relative;
+    padding-bottom: 8px;
+    bottom: 430px;
+    color: white;
 }
 
-
-/*轮播图*/
-.broadcast img{
-    height: 468px;
-    width: 100%;
+@media screen and (max-width: 1200px) {
+    .title-h-center{
+        position: relative;
+        padding-bottom: 8px;
+        bottom: 320px;
+        color: white;
+    }
 }
-
 @media screen and (max-width: 992px) {
-    .broadcast img {
-        height: 300px;
-        width: 100%;
+    .title-h-center{
+        position: relative;
+        padding-bottom: 8px;
+        bottom: 250px;
+        color: white;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .broadcast img {
-        height: 200px;
-        width: 100%;
+    .title-h-center{
+        position: relative;
+        padding-bottom: 8px;
+        bottom: 170px;
+        color: white;
     }
 }
-
-
-/*集合*/
-.main-shadow{
-    box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);
-    transition: box-shadow .3s;
-}
-.gutters-5>div{
-    padding-right: 5px;
-    padding-left: 5px;
-}
-.gutters-5 .style-4{
-    margin-bottom: 0;
-    border-radius: 8px 8px 0 0;
+.page-desc{
+    opacity: .8;
+    word-break: break-word;
 }
 
 
-.graphic>.fit-cover{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all .2s;
-    overflow: hidden;
-    -o-object-fit: cover;
-    object-fit: cover;
-}
-
-img.lazyloaded{
-    -webkit-animation: lazy_blur .5s;
-    animation: lazy_blur .5s;
-}
-
-img.lazyloaded:hover{
-    transform: scale(1.1);
-}
-
-.graphic-mask{
-    background: #000;
-}
-
-/*.abs-center{
-    text-align: right;
-}
-
-.abs-center.right-top{
-    left: auto;
-    width: auto;
-}
-
-badge.b-black{
-    background-color: rgba(0, 0, 0, .2);
-}*/
-
-/*集合下部分 文字*/
-.text-ellipsis{
-    /*隐藏文字 控制方块大小*/
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.gutters-5 a:hover{
-    color: #f78da7;
-}
-
-/*分类和软件*/
-.classification li>a{
-    display: inline-block;
-    padding: 2px 11px;
-    font-weight: 500;
-    border-radius: 20px;
-    margin: 0 1px;
-
-}
-
-.classification li>a:hover{
-    color: #f78da7;
-}
-.classification li >.nav-link.active{
-    background: #f04494;;
-    color: #fff!important;
-}
-
-/*软件列表*/
+/*导航*/
+/*导航列表内容*/
 .posts-row {
     margin-left: -8px;
     margin-right: -8px;
@@ -127,7 +64,7 @@ badge.b-black{
 
 }
 .posts-item.card{
-    width: calc(25% - 16px);
+    width: calc(25% - 19px);
     display: inline-block;
     margin: 8px;
     padding: 10px;
@@ -136,7 +73,7 @@ badge.b-black{
 }
 @media screen and (max-width: 992px) {
     .posts-item.card{
-        width: calc(33.3% - 16px);
+        width: calc(32% - 16px);
         display: inline-block;
         margin: 8px;
         padding: 10px;
@@ -147,9 +84,9 @@ badge.b-black{
 
 @media screen and (max-width: 768px) {
     .posts-item.card{
-        width: calc(50% - 10px);
+        width: calc(45% - 5px);
         display: inline-block;
-        margin: 8px;
+        margin: 5px;
         padding: 10px;
         vertical-align: top;
         transition: .3s;
@@ -247,12 +184,6 @@ badge.b-black{
     --this-bg: rgba(41,151,247,.1);
 }
 
-.item-body .item-tags .jb-yellow{
-    background: linear-gradient(135deg, #f59f54 10%, #ff6922 100%);;
-    color: white;
-    font-weight: 400;
-}
-
 .but{
     border-radius: 4px;
     display: inline-block;
@@ -277,7 +208,7 @@ badge.b-black{
 
 .but:hover{
     /*border: 1px solid white;*/
-    box-shadow: -8px 4px 4px rgba(69, 74, 77, 0.1);
+    box-shadow: -8px -8px 12px rgba(41,151,247,.1);;
 }
 
 .flex.jsb {
@@ -324,11 +255,3 @@ badge.b-black{
     -o-object-fit: cover;
     object-fit: cover;
 }
-
-
-
-
-
-
-
-

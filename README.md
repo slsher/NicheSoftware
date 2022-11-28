@@ -17,8 +17,18 @@
 ## 好用的css技术
 ```html
 transform: scale(1.1);<!--好用简单的放大的效果-->
-box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);<!--阴影-->
+
+<!--阴影-->
+box-shadow: 0 0 10px rgba(116, 116, 116, 0.08);
+box-shadow: -8px 4px 4px rgba(69, 74, 77, 0.1);
+
+<!--textarea添加背景-->
 background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
 url(../resources/img/chatting.png) right 10px bottom -15px  no-repeat;
-background-size: 25%;<!--textarea添加背景-->
+background-size: 25%;
+
+<!-- 多余的字体省略 博客常用css -->
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
 ```
