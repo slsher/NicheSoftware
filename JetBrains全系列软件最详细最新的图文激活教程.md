@@ -31,7 +31,7 @@ height: 100%;transition: all .2s;overflow: hidden;object-fit: cover;max-width:10
 
 ### 软件介绍：
 
-Typora Win/macOS 中文破解版 (简洁高效的Markdown编辑器)由佛系软件foxirj.com整理发布。Typora 是一款简单、高效而且非常优雅的 Markdown 编辑器，它提供了一种所见即所得的全新的 Markdown 写作体验。Typora 把源码编辑和效果预览两者合二为一，在输入 Markdown 代码的时候即时生成预览效果。Typora 是目前互联网上最受欢迎的 Markdown 编辑器之一。
+Typora Win/macOS 中文破解版 (简洁高效的Markdown编辑器)由小众软件整理发布。Typora 是一款简单、高效而且非常优雅的 Markdown 编辑器，它提供了一种所见即所得的全新的 Markdown 写作体验。Typora 把源码编辑和效果预览两者合二为一，在输入 Markdown 代码的时候即时生成预览效果。Typora 是目前互联网上最受欢迎的 Markdown 编辑器之一。
 
 ### 软件截图：
 

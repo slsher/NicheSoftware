@@ -11,8 +11,11 @@
 - bootstrap
 
 ## 资源网站
-- https://delesign.com/free-designs/graphics/
-- https://www.iconfont.cn/
+- https://delesign.com/free-designs/graphics/ 免费版权图片网站
+- https://www.iconfont.cn/ 阿里矢量图
+- https://uiverse.io/ 有创意的UI设计
+- https://v4.bootcss.com/ bootstrap v4
+- https://www.bootcdn.cn/ cdn急兔云网站
 
 ## 好用的css技术
 ```html

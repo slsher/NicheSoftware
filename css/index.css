@@ -127,7 +127,7 @@ badge.b-black{
 
 }
 .posts-item.card{
-    width: calc(25% - 16px);
+    width: calc(25% - 19px);
     display: inline-block;
     margin: 8px;
     padding: 10px;
@@ -136,7 +136,7 @@ badge.b-black{
 }
 @media screen and (max-width: 992px) {
     .posts-item.card{
-        width: calc(33.3% - 16px);
+        width: calc(33.3% - 19px);
         display: inline-block;
         margin: 8px;
         padding: 10px;
@@ -147,7 +147,7 @@ badge.b-black{
 
 @media screen and (max-width: 768px) {
     .posts-item.card{
-        width: calc(50% - 10px);
+        width: calc(50% - 19px);
         display: inline-block;
         margin: 8px;
         padding: 10px;
